@@ -56,6 +56,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     _tagCornerRadius = 10.0f;
     _tagBorderWidth = 0.5f;
     _tagContentInset = UIEdgeInsetsMake(5, 10, 5, 10);
+    _contentInset = UIEdgeInsetsZero;
     
     _tagBorderColor = [UIColor lightGrayColor];
     _tagSelectedBorderColor = [UIColor lightGrayColor];
@@ -154,6 +155,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.backgroundColor = self.backgroundColor;
+        _collectionView.contentInset = self.contentInset;
         [_collectionView registerClass:[JCTagCell class] forCellWithReuseIdentifier:reuseIdentifier];
     }
     
@@ -194,6 +196,12 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     layout.minimumLineSpacing = tagLineSpacing;
 }
 
+- (void)setContentInset:(UIEdgeInsets)contentInset {
+    _contentInset = contentInset;
+    
+    self.collectionView.contentInset = contentInset;
+}
+
 - (CGFloat)contentHeight {
     CGFloat contentHeight = 0;
     
@@ -216,6 +224,8 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
         
         originX += (self.tagItemSpacing + itemSize.width);
     }
+    
+    contentHeight += self.contentInset.top + self.contentInset.bottom;
     
     return contentHeight;
 }

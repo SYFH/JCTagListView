@@ -21,6 +21,7 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable CGFloat tagBorderWidth; // default: 0.5
 
 @property (nonatomic, assign) UIEdgeInsets tagContentInset; // default: 5､ 10､ 5､ 10
+@property (nonatomic, assign) UIEdgeInsets contentInset; //default: 0､ 0､ 0､ 0
 
 @property (nonatomic, strong) UIColor *tagBorderColor; // default: lightGrayColor
 @property (nonatomic, strong) UIColor *tagSelectedBorderColor; // default: lightGrayColor
