@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCTagListView'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = 'Support select tags and settings tags style.'
   s.homepage         = 'http://lijingcheng.github.io/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lijingcheng' => 'bj_lijingcheng@163.com' }
   s.source           = { :git => 'https://github.com/SYFH/JCTagListView', :tag => s.version.to_s }
   s.social_media_url = 'http://weibo.com/lijingcheng1984'
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   s.source_files = 'JCTagListView/Classes/**/*'
 end

@@ -1,5 +1,5 @@
 PODS:
-  - JCTagListView (2.0.0)
+  - JCTagListView (2.0.1)
 
 DEPENDENCIES:
   - JCTagListView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JCTagListView: 051fa899b8a3453f1d33b5e0cde5f5a341191ff4
+  JCTagListView: f01b455f289a52a1c4a76bead905c81f27a64446
 
 PODFILE CHECKSUM: 18ca15bb9051d983a8c3f8f24762f0bcfcc735cf
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
