@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'JCTagListView'
-  s.version          = '2.0.2'
+  s.name             = 'MKTagListView'
+  s.version          = '2.0.3'
   s.summary          = 'Support select tags and settings tags style.'
   s.homepage         = 'http://lijingcheng.github.io/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
